@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href='styles/style.css' />
+        <title>Web exercice</title>
+    </head>
+    <body onload="checkBrowser();">
+        
+        <section class="workbench container">
+            <div id="origin" class='row'>
+                <div class="external" id='box1' draggable="true" ondragstart="startDragging(event)" ondragend="endDragging(event)">
+                </div>
+                <div class="external" id='box2' draggable="true" ondragstart="startDragging(event)" ondragend="endDragging(event)">
+                </div><div class="external" id='box3' draggable="true" ondragstart="startDragging(event)" ondragend="endDragging(event)">
+                </div><div class="external" id='box4' draggable="true" ondragstart="startDragging(event)" ondragend="endDragging(event)">
+                </div>
+            </div>
+            <div id='dest' class="row">
+                <div class="boxContainer" id="A" ondragenter="return dragIn()" ondragover="return dragOver(event)" ondrop="return dropDraggedItem(event)"></div>
+			<div class="boxContainer" id="B" ondragenter="return dragIn()" ondragover="return dragOver(event)" ondrop="return dropDraggedItem(event)"></div>
+			<div class="boxContainer" id="C" ondragenter="return dragIn()" ondragover="return dragOver(event)" ondrop="return dropDraggedItem(event)"></div>
+			<div class="boxContainer" id="D" ondragenter="return dragIn()" ondragover="return dragOver(event)" ondrop="return dropDraggedItem(event)"></div>
+            </div>	
+
+        </section>
+        
+        
+
+
+        <script src="js/main.js"></script>
+        <script src="js/checkPos.js"></script>
+    </body>
+</html>
