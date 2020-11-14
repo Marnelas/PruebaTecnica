@@ -1,3 +1,3 @@
 # PruebaTecnica
 
-<p>ejecutar index.html para reproducir la página web</p>
+<p>ejecutar <a href="https://marnelas.github.io/">aquí</p>
